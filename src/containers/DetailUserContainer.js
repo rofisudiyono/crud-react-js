@@ -1,10 +1,16 @@
 import React, { Component } from "react";
-
+import { Buttons } from "../component";
+import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 export default class DetailUserContainer extends Component {
   render() {
     return (
       <div>
-        <h1>detail user</h1>
+        <Container>
+          <Link to="/">
+            <Buttons title="Back" />
+          </Link>
+        </Container>
       </div>
     );
   }
